@@ -9,6 +9,7 @@ const mysql = require('mysql');
 // connection configurations
 
 const mc = mysql.createConnection({
+	// credential of the dat base
 	host: 'localhost',
 	user: 'ashu',
 	password:'ashutosh',
@@ -19,7 +20,7 @@ mc.connect();
 
 app.listen(port);
 
-console.log('API server statred on: '+port);
+console.log('API server statred on tha port : '+port);
 
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
